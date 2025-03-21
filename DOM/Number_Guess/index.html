@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(53, 50, 50);
+            height: 100vh;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        input {
+            height: 30px;
+            font-size: 20px;
+        }
+
+        input {
+            border-radius: 3px;
+            border: 5px solid black;
+            background-color: rgb(245, 232, 232);
+        }
+
+        button {
+            border-radius: 10px;
+            /* width: 60%; */
+            height: 45px;
+            font-size: 16px;
+            background-color: aquamarine;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(86, 199, 161);
+            border: 3px solid black;
+        }
+        #result{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>You have 10 attempts to guess the right number</p>
+    </div>
+
+    <h1>Guess a number</h1>
+
+        <input type="number" name="" id="inputNum" required placeholder="Guess any number">
+        <br>
+        <button onclick="guessNum()">Submit Buttom</button>
+    <!-- </form> -->
+
+    <div class="bottom">
+        <p>Previous Guesses : <span id="guessed"></span></p>
+        <p>Guesses remaining : <span id="remChances"></span></p>
+    </div>
+
+    <div id="result">
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
